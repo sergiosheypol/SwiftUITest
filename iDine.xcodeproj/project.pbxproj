@@ -13,6 +13,10 @@
 		49E21BC323E5896900D23F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E21BC223E5896900D23F04 /* Assets.xcassets */; };
 		49E21BC623E5896900D23F04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E21BC523E5896900D23F04 /* Preview Assets.xcassets */; };
 		49E21BC923E5896900D23F04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E21BC723E5896900D23F04 /* LaunchScreen.storyboard */; };
+		49E21BD123E589E000D23F04 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E21BD023E589E000D23F04 /* Helper.swift */; };
+		49E21BD423E58A1200D23F04 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E21BD223E58A1200D23F04 /* Menu.swift */; };
+		49E21BD523E58A1200D23F04 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E21BD323E58A1200D23F04 /* Order.swift */; };
+		49E21BD723E58A7000D23F04 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 49E21BD623E58A7000D23F04 /* menu.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		49E21BC523E5896900D23F04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49E21BC823E5896900D23F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49E21BCA23E5896900D23F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E21BD023E589E000D23F04 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		49E21BD223E58A1200D23F04 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		49E21BD323E58A1200D23F04 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		49E21BD623E58A7000D23F04 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,9 @@
 				49E21BC023E5896800D23F04 /* ContentView.swift */,
 				49E21BC223E5896900D23F04 /* Assets.xcassets */,
 				49E21BC723E5896900D23F04 /* LaunchScreen.storyboard */,
+				49E21BDA23E591F800D23F04 /* EXTRA */,
+				49E21BD823E591CF00D23F04 /* UI */,
+				49E21BD923E591E200D23F04 /* DATA */,
 				49E21BCA23E5896900D23F04 /* Info.plist */,
 				49E21BC423E5896900D23F04 /* Preview Content */,
 			);
@@ -73,6 +84,31 @@
 				49E21BC523E5896900D23F04 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		49E21BD823E591CF00D23F04 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				49E21BD223E58A1200D23F04 /* Menu.swift */,
+				49E21BD323E58A1200D23F04 /* Order.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		49E21BD923E591E200D23F04 /* DATA */ = {
+			isa = PBXGroup;
+			children = (
+				49E21BD623E58A7000D23F04 /* menu.json */,
+			);
+			path = DATA;
+			sourceTree = "<group>";
+		};
+		49E21BDA23E591F800D23F04 /* EXTRA */ = {
+			isa = PBXGroup;
+			children = (
+				49E21BD023E589E000D23F04 /* Helper.swift */,
+			);
+			path = EXTRA;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +171,7 @@
 			files = (
 				49E21BC923E5896900D23F04 /* LaunchScreen.storyboard in Resources */,
 				49E21BC623E5896900D23F04 /* Preview Assets.xcassets in Resources */,
+				49E21BD723E58A7000D23F04 /* menu.json in Resources */,
 				49E21BC323E5896900D23F04 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,9 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E21BD523E58A1200D23F04 /* Order.swift in Sources */,
 				49E21BBD23E5896800D23F04 /* AppDelegate.swift in Sources */,
 				49E21BBF23E5896800D23F04 /* SceneDelegate.swift in Sources */,
 				49E21BC123E5896800D23F04 /* ContentView.swift in Sources */,
+				49E21BD123E589E000D23F04 /* Helper.swift in Sources */,
+				49E21BD423E58A1200D23F04 /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
