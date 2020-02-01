@@ -19,6 +19,7 @@
 		49E21BD723E58A7000D23F04 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 49E21BD623E58A7000D23F04 /* menu.json */; };
 		49E21BDC23E5934D00D23F04 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E21BDB23E5934D00D23F04 /* ItemRow.swift */; };
 		49E21BDE23E5974200D23F04 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E21BDD23E5974200D23F04 /* MenuItem.swift */; };
+		49E21BE023E5EBDC00D23F04 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E21BDF23E5EBDC00D23F04 /* ItemDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		49E21BD623E58A7000D23F04 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		49E21BDB23E5934D00D23F04 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItemRow.swift; path = iDine/ItemRow.swift; sourceTree = SOURCE_ROOT; };
 		49E21BDD23E5974200D23F04 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		49E21BDF23E5EBDC00D23F04 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				49E21BDB23E5934D00D23F04 /* ItemRow.swift */,
+				49E21BDF23E5EBDC00D23F04 /* ItemDetail.swift */,
 				49E21BD223E58A1200D23F04 /* MenuSection.swift */,
 				49E21BD323E58A1200D23F04 /* Order.swift */,
 				49E21BDD23E5974200D23F04 /* MenuItem.swift */,
@@ -193,6 +196,7 @@
 				49E21BBD23E5896800D23F04 /* AppDelegate.swift in Sources */,
 				49E21BBF23E5896800D23F04 /* SceneDelegate.swift in Sources */,
 				49E21BDC23E5934D00D23F04 /* ItemRow.swift in Sources */,
+				49E21BE023E5EBDC00D23F04 /* ItemDetail.swift in Sources */,
 				49E21BC123E5896800D23F04 /* ContentView.swift in Sources */,
 				49E21BDE23E5974200D23F04 /* MenuItem.swift in Sources */,
 				49E21BD123E589E000D23F04 /* Helper.swift in Sources */,
