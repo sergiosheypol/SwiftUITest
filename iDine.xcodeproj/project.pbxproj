@@ -22,6 +22,7 @@
 		49E21BE023E5EBDC00D23F04 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E21BDF23E5EBDC00D23F04 /* ItemDetailView.swift */; };
 		49E21BE323E5FE2000D23F04 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E21BE223E5FE2000D23F04 /* OrderView.swift */; };
 		49E21BE523E603B800D23F04 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E21BE423E603B800D23F04 /* AppView.swift */; };
+		49F306FA23E6DB3400D6C5F5 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F306F923E6DB3400D6C5F5 /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		49E21BDF23E5EBDC00D23F04 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
 		49E21BE223E5FE2000D23F04 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		49E21BE423E603B800D23F04 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppView.swift; path = iDine/UI/AppView.swift; sourceTree = SOURCE_ROOT; };
+		49F306F923E6DB3400D6C5F5 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CheckoutView.swift; path = iDine/CheckoutView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		49E21BD823E591CF00D23F04 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				49F306F923E6DB3400D6C5F5 /* CheckoutView.swift */,
 				49E21BC023E5896800D23F04 /* ContentView.swift */,
 				49E21BE423E603B800D23F04 /* AppView.swift */,
 				49E21BDB23E5934D00D23F04 /* ItemRowView.swift */,
@@ -216,6 +219,7 @@
 			files = (
 				49E21BD523E58A1200D23F04 /* Order.swift in Sources */,
 				49E21BBD23E5896800D23F04 /* AppDelegate.swift in Sources */,
+				49F306FA23E6DB3400D6C5F5 /* CheckoutView.swift in Sources */,
 				49E21BBF23E5896800D23F04 /* SceneDelegate.swift in Sources */,
 				49E21BDC23E5934D00D23F04 /* ItemRowView.swift in Sources */,
 				49E21BE523E603B800D23F04 /* AppView.swift in Sources */,
