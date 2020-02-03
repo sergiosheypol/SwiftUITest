@@ -1,22 +1,23 @@
 //
-//  OrderView.swift
+//  FavsView.swift
 //  iDine
 //
-//  Created by Sergio López on 01/02/2020.
+//  Created by Sergio López on 03/02/2020.
 //  Copyright © 2020 Sergio López. All rights reserved.
 //
 
 import SwiftUI
 
-struct OrderView: View {
+struct FavsView: View {
     
-    @EnvironmentObject var order: Order
+    @EnvironmentObject var favs: Favourites
+    
     
     var body: some View {
         NavigationView {
-            List {
+            List{
                 Section {
-                    ForEach(order.items) { item in
+                    ForEach(favs.favs) { item in
                         HStack {
                             Text(item.name)
                             Spacer()
@@ -24,28 +25,21 @@ struct OrderView: View {
                         }
                     }.onDelete(perform: deleteItems)
                 }
-                Section {
-                    NavigationLink (destination: CheckoutView()) {
-                        Text("Place order")
-                    }
-                }.disabled(order.items.isEmpty )
-            }.navigationBarTitle("Order")
+            }.navigationBarTitle("Favs")
             .listStyle(GroupedListStyle())
             .navigationBarItems(trailing: EditButton())
         }
     }
     
     func deleteItems(at offsets: IndexSet) {
-        order.items.remove(atOffsets: offsets)
+        favs.favs.remove(atOffsets: offsets)
     }
-    
 }
 
-struct OrderView_Previews: PreviewProvider {
-    
-    static let order = Order()
+struct FavsView_Previews: PreviewProvider {
+    static let favs = Favourites()
     
     static var previews: some View {
-        OrderView().environmentObject(order)
+        FavsView().environmentObject(favs)
     }
 }

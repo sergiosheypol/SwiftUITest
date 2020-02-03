@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49BFAA5A23E8936C0080AB77 /* Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BFAA5923E8936C0080AB77 /* Favourites.swift */; };
+		49BFAA5C23E8A1340080AB77 /* FavsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BFAA5B23E8A1340080AB77 /* FavsView.swift */; };
 		49E21BBD23E5896800D23F04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E21BBC23E5896800D23F04 /* AppDelegate.swift */; };
 		49E21BBF23E5896800D23F04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E21BBE23E5896800D23F04 /* SceneDelegate.swift */; };
 		49E21BC123E5896800D23F04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E21BC023E5896800D23F04 /* ContentView.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49BFAA5923E8936C0080AB77 /* Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourites.swift; sourceTree = "<group>"; };
+		49BFAA5B23E8A1340080AB77 /* FavsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavsView.swift; sourceTree = "<group>"; };
 		49E21BB923E5896800D23F04 /* iDine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E21BBC23E5896800D23F04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49E21BBE23E5896800D23F04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 				49E21BDB23E5934D00D23F04 /* ItemRowView.swift */,
 				49E21BDF23E5EBDC00D23F04 /* ItemDetailView.swift */,
 				49E21BE223E5FE2000D23F04 /* OrderView.swift */,
+				49BFAA5B23E8A1340080AB77 /* FavsView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				49E21BD323E58A1200D23F04 /* Order.swift */,
+				49BFAA5923E8936C0080AB77 /* Favourites.swift */,
 			);
 			path = CONTROLLER;
 			sourceTree = "<group>";
@@ -227,7 +233,9 @@
 				49E21BC123E5896800D23F04 /* ContentView.swift in Sources */,
 				49E21BDE23E5974200D23F04 /* MenuItem.swift in Sources */,
 				49E21BD123E589E000D23F04 /* Helper.swift in Sources */,
+				49BFAA5A23E8936C0080AB77 /* Favourites.swift in Sources */,
 				49E21BD423E58A1200D23F04 /* MenuSection.swift in Sources */,
+				49BFAA5C23E8A1340080AB77 /* FavsView.swift in Sources */,
 				49E21BE323E5FE2000D23F04 /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

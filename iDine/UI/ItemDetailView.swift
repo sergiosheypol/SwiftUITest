@@ -11,10 +11,12 @@ import SwiftUI
 struct ItemDetail: View {
     
     @EnvironmentObject var order: Order
-        
+    @EnvironmentObject var favs: Favourites
+      
     var item: MenuItem
     
     var body: some View {
+        
         VStack {
             ZStack(alignment: .bottomTrailing) {
                 Image(item.mainImage)
@@ -34,14 +36,27 @@ struct ItemDetail: View {
             }
             .font(.headline)
             .padding(10)
+            .foregroundColor(.white)
+            .background(Color.blue)
+            .cornerRadius(CGFloat(5))
             
             Spacer()
             
             Text("Copyright 2020")
                 .foregroundColor(.gray)
                 .font(.system(size: 14))
-        }.navigationBarTitle(Text(item.name), displayMode: .inline)
+
+        }
+        .navigationBarTitle(Text(item.name), displayMode: .inline)
+
+        .navigationBarItems(trailing: Button("Add to favs") {
+            self.favs.add(item: self.item)
+        })
+        
     }
+    
+
+
 }
 
 struct ItemDetail_Previews: PreviewProvider {

@@ -13,14 +13,17 @@ struct CheckoutView: View {
     @EnvironmentObject var order: Order
     
     static let paymentTypes = ["Cash", "Credit card", "iDine points", "Paypal"]
+    @State private var paymentType = 0
+    
     static let tipAmounts = [0, 10, 20, 25]
     
+    static let pickupTimes = ["Now", "Tonight", "Tomorrow morning"]
+    @State private var pickupTime = 0
     
-    
-    @State private var paymentType = 0
     @State private var addLoyaltyDetails = false
     @State private var loyaltyNumber = ""
     @State private var tipAmount = 0
+    @State private var showingAlert = false
     
     var totalPrice: Double {
         let total = Double(order.total)
@@ -57,7 +60,14 @@ struct CheckoutView: View {
                     TextField("Enter your iDine ID", text: $loyaltyNumber)
                 }
                 
-                
+            }
+            
+            Section {
+                Picker("Choose your pickup time", selection: $pickupTime) {
+                    ForEach(0..<Self.pickupTimes.count) {
+                        Text(Self.pickupTimes[$0])
+                    }
+                }
             }
             
             Section(header: Text("Add a tip")) {
@@ -68,13 +78,23 @@ struct CheckoutView: View {
                 }.pickerStyle(SegmentedPickerStyle())
             }
             
-            Section(header: Text("TOTAL: $\(totalPrice, specifier: " %.2f")")) {
+            Section(header: Text("TOTAL: $\(totalPrice, specifier: "%.2f")").font(.largeTitle)) {
                 Button("Confirm order") {
-                    // Place order
+                    self.showingAlert.toggle()
+                    
+                    self.order.items.map {
+                        self.order.remove(item: $0)
+                    }
+    
                 }
             }
             
         }.navigationBarTitle(Text("Payment"), displayMode: .inline)
+         .alert(isPresented: $showingAlert) {
+            Alert(title: Text("Order confirmed"),
+                  message: Text("Your total price was $\(totalPrice ,specifier: "%.2f") - Thank you!"),
+                  dismissButton: .default(Text("OK")) )
+        }
     }
 }
 
